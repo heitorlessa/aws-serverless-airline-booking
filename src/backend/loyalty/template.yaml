@@ -129,8 +129,8 @@ Resources:
       Value: !Sub "https://${LoyaltyApi}.execute-api.${AWS::Region}.amazonaws.com/Prod"
 
   #
-  Uncomment the following resources + AccessLogSetting to enable API Gateway Logs
-  [CAUTION] API Gateway can only have one IAM Role to push logs too, do not uncomment if you already have one
+  # Uncomment the following resources + AccessLogSetting to enable API Gateway Logs
+  # [CAUTION] API Gateway can only have one IAM Role to push logs too, do not uncomment if you already have one
   # 
   ApiGatewayCloudWatchRole:
     Type: 'AWS::IAM::Role'
